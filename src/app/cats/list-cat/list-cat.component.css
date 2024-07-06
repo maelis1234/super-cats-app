@@ -1,0 +1,28 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  border-radius: 10px;
+  margin: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: pink;
+}
+
+tr:hover {
+  background-color: peachpuff;
+  cursor: pointer;
+}
+
+td {
+  text-align: center;
+  border: 1px pink solid;
+}

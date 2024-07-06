@@ -1,0 +1,30 @@
+<h3>Liste des chats</h3>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        @for (column of displayedColumns ; track column){
+        <th>{{ column }}</th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for (cat of catList ; track cat){
+      <tr (click)="goToDetailCat(cat)" onkeypress="">
+        <td>{{ cat.id }}</td>
+        <td>{{ cat.name }}</td>
+        <td>{{ cat.breed }}</td>
+        <td>
+          <ul>
+            @for(color of cat.colors ; track color){
+            <li>{{ color }}</li>
+            }
+          </ul>
+        </td>
+        <td>{{ cat.birthyear }}</td>
+        <td>{{ cat.birthplace }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

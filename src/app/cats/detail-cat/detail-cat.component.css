@@ -1,0 +1,31 @@
+.card {
+  border: 1px solid plum;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+
+.header {
+  background-color: plum;
+}
+
+.btn-container {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  padding: 10px 16px;
+}
